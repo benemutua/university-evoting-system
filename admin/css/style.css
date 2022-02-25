@@ -1,0 +1,924 @@
+
+
+/* BASIC THEME CONFIGURATION */
+body {
+
+    font-size:13px;
+    
+   
+}
+
+ul li {
+    list-style: none;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+/* Bootstrap Modifications */
+.modal-header {
+	background: blue;
+}
+
+.modal-title {
+	color: white;
+}
+
+.btn-round {
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+.accordion-heading .accordion-toggle {
+	display: block;
+	cursor: pointer;
+	border-top: 1px solid #F5F5F5;
+	padding: 5px 0px;
+	line-height: 28.75px;
+	text-transform: uppercase;
+	color: #1a1a1a;
+	background-color: #ffffff;
+	outline: none !important;
+	text-decoration: none;
+}
+
+
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #797979;
+}
+
+
+
+ul.top-menu > li > .logout {
+	color: white;
+	font-size: 12px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid white !important;
+	padding: 2px 16px;
+	margin-right: 15px;
+	background: #cc0000;
+	margin-top: 15px;
+}
+
+
+
+/*sidebar navigation*/
+
+#sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background: #66b2ff;
+}
+
+#sidebar h5 {
+	color: white;
+	font-weight: 700;
+}
+
+#sidebar ul li {
+    position: relative;
+}
+
+#sidebar .sub-menu > .sub li  {
+    padding-left: 32px;
+}
+
+#sidebar .sub-menu > .sub li:last-child {
+    padding-bottom: 10px;
+}
+
+
+/*=--------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------*/
+
+.nav-collapse.collapse {
+    display: inline;
+}
+
+ul.sidebar-menu , ul.sidebar-menu li ul.sub{
+    margin: -2px 0 0;
+    padding: 0;
+}
+
+ul.sidebar-menu {
+    margin-top: 75px;
+}
+
+#sidebar > ul > li > ul.sub {
+    display: none;
+}
+
+#sidebar > ul > li.active > ul.sub, #sidebar > ul > li > ul.sub > li > a {
+    display: block;
+}
+
+ul.sidebar-menu li ul.sub li{
+    background: transparent;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+ul.sidebar-menu li ul.sub li:last-child{
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+}
+
+ul.sidebar-menu li ul.sub li a {
+    font-size: 12px;
+    padding: 6px 0;
+    line-height: 35px;
+    height: 35px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+ul.sidebar-menu li ul.sub li a:hover {
+	color: white;
+	background: #99ccff;
+    
+}
+
+ul.sidebar-menu li ul.sub li.active a {
+    color: transparent;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+ul.sidebar-menu li{
+    /*line-height: 20px !important;*/
+    margin-bottom: 5px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+ul.sidebar-menu li.sub-menu{
+    line-height: 15px;
+}
+
+ul.sidebar-menu li a span{
+    display: inline-block;
+}
+
+ul.sidebar-menu li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0 15px 10px;
+    font-size: 12px;
+    outline: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
+    background: #99ccff;
+    
+    color: white;
+    display: block;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+ul.sidebar-menu li a i {
+    font-size: 15px;
+    padding-right: 6px;
+}
+
+ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
+    color: #fff;
+}
+
+ul.sidebar-menu li a.active i {
+    color: #fff;
+}
+
+
+
+/* MAIN CONTENT CONFIGURATION */
+#main-content {
+    margin-left: 210px;
+}
+
+.header, .footer {
+    padding: 0 15px;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1002;
+}
+/* the header part*/
+.black-bg {
+    background: #66b2ff;
+    color: white;
+}
+
+.wrapper {
+    display: inline-block;
+    margin-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    width: 100%;
+}
+
+a.logo {
+    font-size: 20px;
+    color: white;
+    float: left;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+a.logo b {
+
+}
+
+a.logo:hover, a.logo:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+
+.dropdown-menu.extended {
+    max-width: 300px !important;
+    min-width: 160px !important;
+    top: 42px;
+    width: 235px !important;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.176) !important;
+    border: none !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* Safari and Chrome */
+    .dropdown-menu.extended  {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.176) !important;
+    };
+a.logo {
+    font-size: 8px;
+    color: white;
+    float: left;
+    text-transform: lowercase;
+}    
+    
+    }
+
+
+
+
+
+/*--sidebar toggle---the collapse menu and stuff*/
+
+.sidebar-toggle-box {
+    float: left;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+.sidebar-toggle-box .fa-bars {
+    cursor:e-resize;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.sidebar-closed > #sidebar > ul {
+    display: none;
+}
+
+.sidebar-closed #main-content {
+    margin-left: 0px;
+}
+
+.sidebar-closed #sidebar {
+    margin-left: -180px;
+}
+
+/*------------------------------------------------------------*/
+/* style scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey; 
+  border-radius: 2px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #99ccff; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: steelblue; 
+}
+/*------end scrolbar styling-----*/
+
+/*------------------------------------------------------------------*/
+
+/*----------------------------------------------
+ CSS for the tabbed panels
+-------------------------------------------------*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling 
+*/
+body {
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  color: #333;
+  font-weight: 300;
+   
+}
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 5px 30px;
+  border: 1px solid gainsboro;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  margin: -1px;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+ 
+}
+
+
+
+.tabset > input:checked + label {
+  border-color: lightsteelblue;
+  border-top: 2px solid steelblue;
+  margin-bottom: -1px;
+    color: brown;
+}
+
+.tab-panel {
+  padding: 20px;
+  border: 1px solid gainsboro;
+  border-radius:5px;
+    overflow:auto;
+   
+}
+/*-------end-----*/
+
+
+
+
+
+
+
+/*--------------------styling inputs-------------------*/
+.form {
+	text-align: left;
+}
+
+label {
+	font-weight: 200;
+    display: flex;
+    text-align: left;
+    margin: 3px;
+}
+
+
+.input-group1 {
+    margin: 10px 0px 10px 0px;
+}
+
+.input-group1 input {
+    height: 30px;
+    width: 60%;
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+.dropdown {
+    height: 30px;
+    width: 60%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+.btn {
+
+    font-size: 13px;
+    color: white;
+    background: #66b2ff;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.btn-reset {
+
+    font-size: 13px;
+    color: white;
+    background: #cc0000;
+    padding: 4px 15px;
+    border: none;
+    border-radius: 5px;
+}
+.edit_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: white;
+     background: #66b2ff;
+    border-radius: 5px;
+}
+.edit_disabled{
+  color:white;
+    cursor: not-allowed;
+     text-decoration: none;
+    padding: 2px 5px;
+     background: #99ccff;
+    border-radius: 5px;
+}
+
+
+.resetpwd_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: darkblue;
+    background: whitesmoke;
+    border: 1px solid #99ccff;
+    border-radius: 5px;
+}
+.factory_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+     color: #66b2ff;
+    background: whitesmoke;
+    border: 1px solid #99ccff;
+    border-radius: 5px;
+}
+
+
+.del_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 3px;
+    background: #cc0000;
+   
+    border-radius: 5px;
+}
+.search{
+    padding: 3px 50px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    
+}
+.search1{
+    padding: 3px 50px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------the message/success div and error----------------------*/
+.cast {
+ margin: auto; 
+    padding: 5px;  
+    color: steelblue; 
+    background: aliceblue;
+     border-left: 5px solid blue;
+    font-family: monospace;
+    width: 96%;
+    text-align: center;
+}
+
+
+.err {
+    margin: auto;
+    padding: 5px; 
+    color: brown; 
+    font-style: normal;
+    font-family:monospace;
+    background: #FFF8DC;
+    border-left: 5px solid brown;
+    width: 100%;
+    text-align: center;
+}
+
+/*----------change system session div-----------*/
+.castsess {
+ margin: auto; 
+    padding: 5px;  
+    color: steelblue; 
+    background: url(../img/bg2.png); 
+    border: 1px solid #99ccff;
+    border-style: dotted;
+    width: 96%;
+    text-align: center;
+    overflow: auto;
+}
+
+/*------end----------*/
+
+
+
+/* --------------------------------------------------------------------------------
+styling row and containers
+------------------------------------------------------------------------------------*/
+/*the div row-con  and div conr*/
+.row-con{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+      display: flex;
+     overflow: auto;
+}
+#row-con{
+    width: 100%;
+    padding-left: 40px;
+    border: 1px solid steelblue;
+    border-style: dotted;
+    border-radius: 7px;
+    background: url('../img/bg2.png');
+      display:inline-block;
+     overflow: auto;
+}
+
+.conr{
+    width: 24%;
+    border: 1px solid gainsboro;
+     border-style: dotted;
+  margin: auto;
+    padding: 20px;
+    height: 130px;
+    display: inline-block;
+    overflow: hidden;
+}
+.logincontainer{
+   
+    top: auto;
+    margin: auto;
+    padding: 10px;
+    height: auto;
+    width: 300px;
+    border: 1px solid gainsboro;
+    align-content: center;
+    border-radius: 5px;
+    color: gray;
+     margin-top: 30px;
+    
+}
+#wid{
+    width: 280px;
+    border: 1px solid gainsboro;
+    font-size: 15px;
+    height: 38px;
+    border-radius: 5px;
+    
+}
+
+#wid:hover{
+    border: 1px solid lightsteelblue;
+    
+}
+
+
+/* Create two equal columns that floats next to each other on the index of voters*/
+.rowflex{
+    border: 1px solid gainsboro;
+    border-bottom: 1px solid steelblue;
+    padding-left: 30px;
+    background: white;
+}
+.colum {
+  float: left;
+    border: 1px solid whitesmoke;
+  width: 47%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.rowflex:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .colum {
+    width: 100%;
+      padding: 1px;
+      height: auto;
+  }
+    .rowflex{
+        width: 100%;
+        padding-left: 1px;
+        border: none;
+    }
+    .search1{
+    width: 100%;
+    border: 1px solid gray;
+        height: 25px;
+    border-radius: 4px;
+    
+}
+    
+    .tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: auto 15px;
+  border: 1px solid gainsboro;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+        font-size: 12px;
+  margin: -1px;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+}
+
+
+
+
+
+
+/* other inputs*/
+
+#line{
+    width: 90%;
+    height: 30px;
+    font-family: monospace;
+    color: black;
+    font-size: 16px;
+    border: 1px solid gainsboro;
+    padding-left: 15px;
+    border-radius: 5px;
+    
+}
+
+#linex{
+    width: 90%;
+    height: 30px;
+    font-family: monospace;
+    color: gainsboro;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+
+#theimage{
+    margin-left: 8%;
+    height: auto;
+    width: 300px;
+    border-radius: 5px;
+    padding-left: 30px;
+    color: gainsboro;
+    
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #line {
+    width: 100%;
+  }
+    #theimage{
+        padding-left: 1px;
+    }
+    .tab-panel {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+}
+
+/*----------------------------
+the profile page
+-----------------------------*/
+.headpart{
+  width: 100%;
+    height: auto;
+    background: #66b2ff;
+    border: 1px solid steelblue;
+    color: white;
+}
+.footerpart{
+  width: 100%;
+    height: auto;
+    background: #66b2ff;
+    margin: auto;
+    border: 1px solid black;
+}
+/*-------the main container------*/
+#profilepage{
+    border: 1px solid lightsteelblue;
+    border-top: none;
+    margin: auto;
+    width: 790px;
+    height: auto;
+    padding-left: 2px;
+    padding-right: 2x;
+    padding-top: none;
+}
+/*---------the personal profile------*/
+.rowflex2{
+    border: 1px solid whitesmoke;
+    width: 760px;
+    padding: 10px;
+    padding-top: 1px;
+    margin: auto;
+}
+.colum1 {
+  float: left;
+    border: 1px solid lightsteelblue;
+  width: 180px;
+    background: white;
+    padding-left: 10px;
+height: 200px;
+}
+.colum2 {
+  float: left;
+    border: 1px solid lightsteelblue;
+  width: 540px;
+    height: 200px;
+  padding-left: 20px;
+    overflow: auto;
+}
+
+/* Clear floats after the columns */
+.rowflex2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*---the inputs on these columns--*/
+.theinput{
+   width: 60%;
+    border: 1px solid whitesmoke;
+    font-size: 18px;
+    font-family: Times New Roman;
+    height: 26px;
+    padding-right: 10px;
+   pointer-events: none; 
+}
+
+/*-------the electotal part-----*/
+#otherpart{
+    width: 760px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid whitesmoke;
+     
+}
+.colx1{
+    float: left;
+    border: 1px solid lightsteelblue;
+  width: 365px;
+    padding-left: 10px;
+   
+}
+.colx2{
+     float: left;
+    border: 1px solid lightsteelblue;
+  width: 365px;
+    padding-left: 10px;
+}
+/* Clear floats after the columns */
+#otherpart:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*--its inputs--*/
+#text1{
+    width: 80%;
+    border: 1px solid gainsboro;
+    font-size: 18px;
+    font-family: Times New Roman;
+    padding-left: 20px;
+    height: 30px; 
+    pointer-events: none;
+}
+#myimg{
+    width:175px;
+    height: 190px;
+}
+
+/*--------------------
+filter to print
+-----------------------*/
+.ins{
+    width: 200px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    #profilepage{
+        width: 100%;
+    }
+    .rowflex2{
+        width: 98%;
+        padding-left: 1px;
+        border: none;
+    }
+    #otherpart{
+       width: 98%;
+        padding-left: 1px;
+        border: none;  
+    }
+    .colum2{
+        width: 90%;
+    }
+    .colx1{
+        width: 90%;
+    }   
+    .colx2{
+        width: 90%;
+    }
+    
+}

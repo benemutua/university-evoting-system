@@ -1,0 +1,16 @@
+/* (A) LIST VIEW BY DEFAULT */
+#lgDemo {
+  display: grid;
+ 
+  grid-gap: 1px;
+}
+#lgDemo .item {
+  padding: 10px;
+  border: 1px solid white;
+}
+#lgDemo .item:nth-child(odd) { background: none; }
+
+/* (B) TRANSFORM INTO GRID VIEW */
+#lgDemo.grid { grid-template-columns: 50% 50%; }
+#lgDemo.grid .item:nth-child(odd) { background: none; }
+
